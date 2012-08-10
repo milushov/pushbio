@@ -41,8 +41,10 @@
 
 # Список желающих помочь руками
 
+* [@xnutsive](https://twitter.com/xnutsive)
 * [@gazay](https://twitter.com/gazay)
 * [@rwz](https://twitter.com/rwz)
 * [@rezwyi](https://twitter.com/rezwyi)
 * [@anton_byrna](https://twitter.com/anton_byrna)
 * [@0ex0](https://twitter.com/0ex0)
+* [@herbbold](https://twitter.com/herbbold)
