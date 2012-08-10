@@ -35,11 +35,13 @@
 * [@goshakkk](https://twitter.com/goshakkk) — $10-20
 * [@kirs](https://twitter.com/kiiiir) — $10-20
 * [@hornedkavu](https://twitter.com/hornedkavu) — $30
-* [0ex0](https://twitter.com/0ex0) - $1
+* [@anton_byrna](https://twitter.com/anton_byrna) — $30
+* [@0ex0](https://twitter.com/0ex0) — $1
 
 # Список желающих помочь руками
 
 * [@gazay](https://twitter.com/gazay)
 * [@rwz](https://twitter.com/rwz)
 * [@rezwyi](https://twitter.com/rezwyi)
-* [@ex0](https://twitter.com/0ex0)
+* [@anton_byrna](https://twitter.com/anton_byrna)
+* [@0ex0](https://twitter.com/0ex0)
