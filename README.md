@@ -34,6 +34,7 @@
 * [@xnutsive](https://twitter.com/xnutsive) — $120
 * [@goshakkk](https://twitter.com/goshakkk) — $10-20
 * [@kirs](https://twitter.com/kiiiir) — $10-20
+* [@hornedkavu](https://twitter.com/hornedkavu) — $30
 * [0ex0](https://twitter.com/0ex0) - $1
 
 # Список желающих помочь руками
