@@ -33,6 +33,7 @@
 * [@alex_chrome](https://twitter.com/alex_chrome) — $30
 * [@xnutsive](https://twitter.com/xnutsive) — $120
 * [@goshakkk](https://twitter.com/goshakkk) — $10-20
+* [@burgua](https://twitter.com/burgua) — 50$
 * [@kirs](https://twitter.com/kiiiir) — $10-20
 * [0ex0](https://twitter.com/0ex0) - $1
 
