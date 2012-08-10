@@ -33,6 +33,7 @@
 * [@alex_chrome](https://twitter.com/alex_chrome) — $30
 * [@xnutsive](https://twitter.com/xnutsive) — $120
 * [@goshakkk](https://twitter.com/goshakkk) — $10-20
+* [@kirs](https://twitter.com/kiiiir) — $10-20
 
 # Список желающих помочь руками
 
