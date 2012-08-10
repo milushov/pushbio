@@ -28,6 +28,8 @@
 
 # Список инвесторов
 
+
+* [@pismenny](https://twitter.com/pismenny) - 50$
 * [@ayatkevich](https://twitter.com/ayatkevich) — $30
 * [@babi4](https://twitter.com/ayatkevich) — $30
 * [@alex_chrome](https://twitter.com/alex_chrome) — $30
