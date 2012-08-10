@@ -41,6 +41,7 @@
 * [@anton_byrna](https://twitter.com/anton_byrna) — $30
 * [@0ex0](https://twitter.com/0ex0) — $1
 * [@rezwyi](https://twitter.com/rezwyi) — $10
+* [@gazay](https://twitter.com/gazay) — $10
 
 # Список желающих помочь руками
 
