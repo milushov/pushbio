@@ -28,4 +28,13 @@
 
 # Список инвесторов
 
-* Александр Яткевич — $30
+* [@ayatkevich](https://twitter.com/ayatkevich) — $30
+* [@babi4](https://twitter.com/ayatkevich) — $30
+* [@alex_chrome](https://twitter.com/alex_chrome) — $30
+* [@xnutsive](https://twitter.com/xnutsive) — $120
+
+# Список желающих помочь руками
+
+* [@gazay](https://twitter.com/gazay)
+* [@rwz](https://twitter.com/rwz)
+* [@rezwyi](https://twitter.com/rezwyi)
