@@ -44,6 +44,7 @@
 * [@gazay](https://twitter.com/gazay) — $10
 * [@inem](https://twitter.com/inem) — $13
 * [@aderyabin](https://twitter.com/aderyabin) — $5
+* [@darth_sim](https://twitter.com/darth_sim) — $30
 
 # Список желающих помочь руками
 
