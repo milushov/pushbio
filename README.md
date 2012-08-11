@@ -42,6 +42,7 @@
 * [@0ex0](https://twitter.com/0ex0) — $1
 * [@rezwyi](https://twitter.com/rezwyi) — $10
 * [@gazay](https://twitter.com/gazay) — $10
+* [@aderyabin](https://twitter.com/aderyabin) — $5
 
 # Список желающих помочь руками
 
@@ -52,3 +53,4 @@
 * [@anton_byrna](https://twitter.com/anton_byrna)
 * [@0ex0](https://twitter.com/0ex0)
 * [@herbbold](https://twitter.com/herbbold)
+* [@aderyabin](https://twitter.com/aderyabin)
