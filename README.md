@@ -46,6 +46,7 @@
 * [@aderyabin](https://twitter.com/aderyabin) — $5
 * [@darth_sim](https://twitter.com/darth_sim) — $30
 * [@AnnieOmsk](https://twitter.com/AnnieOmsk) — $200
+* [@pomnikita](https://twitter.com/pomnikita) - $50
 
 # Список желающих помочь руками
 
@@ -59,3 +60,4 @@
 * [@aderyabin](https://twitter.com/aderyabin)
 * [@muthafaka](https://twitter.com/muthafaka)
 * [@jurgens](https://twitter.com/jurgen_smirnoff)
+* [@pomnikita](https://twitter.com/pomnikita)
