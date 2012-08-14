@@ -58,3 +58,4 @@
 * [@herbbold](https://twitter.com/herbbold)
 * [@aderyabin](https://twitter.com/aderyabin)
 * [@muthafaka](https://twitter.com/muthafaka)
+* [@jurgens](https://twitter.com/jurgen_smirnoff)
