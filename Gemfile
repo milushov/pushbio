@@ -24,7 +24,7 @@ group :assets do
   gem 'skim'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -32,6 +32,14 @@ end
 gem 'jquery-rails'
 gem 'jquery-rails-cdn'
 gem 'role-rails'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 2.11.0'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'spork', '~> 1.0rc'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
