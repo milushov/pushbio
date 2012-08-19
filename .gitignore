@@ -2,3 +2,6 @@
 *.swp
 .rvmrc
 .powrc
+db/*.sqlite3
+log/*.log
+tmp/*
