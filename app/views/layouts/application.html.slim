@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title pushbio
+
+    = stylesheet_link_tag 'application', media: :all
+
+    = javascript_include_tag 'modernizr'
+
+    = csrf_meta_tags
+
+  body
+    = yield
+
+    = jquery_include_tag :google
+    = javascript_include_tag 'application'
