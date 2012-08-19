@@ -6,5 +6,8 @@
 #= require_self
 
 ->
+  # Apply extensions
+  Object.merge(Backbone.View::, RenderingExtension)
+
   new Router()
   Backbone.history.start()
