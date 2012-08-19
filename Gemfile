@@ -41,4 +41,7 @@ group :development, :test do
   gem 'capybara-webkit'
   gem 'guard-cucumber'
   gem 'growl'
+
+  # Front-end
+  gem 'chai-jquery-rails'
 end

@@ -46,6 +46,9 @@ GEM
       activesupport (>= 3.2.0)
     celluloid (0.11.1)
       timers (>= 1.0.0)
+    chai-jquery-rails (0.0.2)
+      railties (~> 3.1)
+      sprockets
     childprocess (0.3.5)
       ffi (~> 1.0, >= 1.0.6)
     chunky_png (1.2.6)
@@ -237,6 +240,7 @@ DEPENDENCIES
   capybara
   capybara-webkit
   carrierwave
+  chai-jquery-rails
   coffee-rails (~> 3.2.1)
   compass (= 0.13.alpha.0)
   compass-rails
