@@ -1,3 +1,7 @@
 Pushbio::Application.routes.draw do
-  root to: 'home#index'
+  match '/:locale', to: 'home#index', locale: /ru|en/
+
+  scope "(:locale)", locale: /ru|en/ do
+    root to: 'home#index'
+  end
 end
