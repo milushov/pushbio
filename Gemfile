@@ -33,6 +33,11 @@ gem 'jquery-rails'
 gem 'jquery-rails-cdn'
 gem 'role-rails'
 
+group :test do
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.11.0'
   gem 'factory_girl_rails', '~> 4.0'
@@ -40,6 +45,8 @@ group :development, :test do
   gem 'guard-spork'
   gem 'guard-rspec'
   gem 'konacha'
+  gem 'capybara'
+  gem 'guard-cucumber'
 end
 
 # To use ActiveModel has_secure_password

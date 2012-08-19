@@ -21,6 +21,10 @@ Spork.prefork do
     ActiveSupport::Dependencies.clear
   end
 
+  #capybara
+  require 'capybara/rspec'
+  require 'capybara/rails'
+  #require 'capybara_helper'
 end
 
 Spork.each_run do
