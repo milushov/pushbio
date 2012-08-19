@@ -14,3 +14,5 @@
 #= require jquery.spin
 
 #= require fileuploader-2.0.beta
+
+#= require app
