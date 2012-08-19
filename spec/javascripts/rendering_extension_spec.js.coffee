@@ -26,3 +26,20 @@ describe 'RenderingExtension', ->
       el.should.contain('Vegitable.')
 
   describe 'integration with Backbone.View', ->
+
+    class ExtendedView extends Backbone.View
+    Object.merge(ExtendedView::, RenderingExtension)
+
+    it 'should have render and renderHTML functions', ->
+      view = new ExtendedView()
+      view.render.should.exists
+      view.render.should.be.a 'function'
+      view.renderHTML.should.exists
+      view.renderHTML.should.be.a 'function'
+
+    it 'should extend properly', ->
+      view = new ExtendedView()
+      view.renderHTML('dummy').should.be.eql '<h1>Just do it!</h1>'
+      view.render('dummy')[0].outerHTML.should.be.eq '<h1>Just do it!</h1>'
+
+
