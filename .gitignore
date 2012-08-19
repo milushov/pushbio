@@ -6,3 +6,5 @@ db/*.sqlite3
 log/*.log
 tmp/*
 .powenv
+.bundle
+/vendor/bundle
