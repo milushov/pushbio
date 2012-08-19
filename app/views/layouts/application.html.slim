@@ -2,14 +2,13 @@ doctype html
 html
   head
     title pushbio
-
     = stylesheet_link_tag 'application', media: :all
-
     = javascript_include_tag 'modernizr'
-
     = csrf_meta_tags
 
   body
+    = flash[:notice]
+    = link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) 
     = yield
 
     = jquery_include_tag :google

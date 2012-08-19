@@ -2,10 +2,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
-gem 'sqlite3'
+gem 'mysql2'
 
 gem 'json'
 gem 'slim'
+
+gem 'devise', '~> 2.1.0'
+gem 'omniauth-facebook'
 
 group :assets do
   gem 'sass', '3.2.1'
