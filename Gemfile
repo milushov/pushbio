@@ -38,6 +38,10 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'konacha'
   gem 'capybara'
+  gem 'capybara-webkit'
   gem 'guard-cucumber'
   gem 'growl'
+
+  # Front-end
+  gem 'chai-jquery-rails'
 end
