@@ -1,0 +1,1 @@
+class @FaqView extends Backbone.View
