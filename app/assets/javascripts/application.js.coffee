@@ -7,6 +7,8 @@
 
 #= require spin-1.2.5
 
+#= require store-2acb1010cc
+
 #= require jquery.role-1.3.0
 #= require jquery.placeholder-2.0.7
 #= require jquery.quicksand-1.2.2
