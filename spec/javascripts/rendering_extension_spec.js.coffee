@@ -16,9 +16,9 @@ describe 'RenderingExtension', ->
   describe '.render()', ->
 
     it 'should return jQuery object', ->
-      el = RenderingExtension.render('fixtures/templates/dummy')
+      el = RenderingExtension.render('dummy')
       el.should.contain('Just do it!')
-      el.html().should.be.eql '<h1>Just do it!</h1>'
+      el[0].outerHTML.should.be.eql '<h1>Just do it!</h1>'
 
     it 'should return jQuery object with iterpolated values', ->
       el = RenderingExtension.render('user', name: 'Sasha Koss', bio: 'Vegitable.')
