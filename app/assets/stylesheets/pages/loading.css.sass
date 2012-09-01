@@ -1,22 +1,12 @@
 +keyframes(loading-progress)
-  17%
-    .loading-progress-dot:nth-child(1)
-      +opacity(1)
-  33%
-    .loading-progress-dot:nth-child(2)
-      +opacity(1)
+  0%
+    background: #bbe6e5
   50%
-    .loading-progress-dot:nth-child(3)
-      +opacity(1)
-  67%
-    .loading-progress-dot:nth-child(4)
-      +opacity(1)
-  83%
-    .loading-progress-dot:nth-child(5)
-      +opacity(1)
+    background: #ebf8f7
+    padding: 2px
+    margin: -1px
   100%
-    .loading-progress-dot:nth-child(6)
-      +opacity(1)
+    background: #bbe6e5
 
 .loading-page
   width: 460px
@@ -34,12 +24,24 @@
 
 .loading-progress-dot
   display: inline-block
-  background: #77ccca
+  background: #bbe6e5
   +border-radius(50%)
   width: 8px
   height: 8px
   margin: 0 8px
-  +opacity(0.5)
   +transition-property(all)
   +transition-duration(100ms)
   +transition-timing-function(ease-out)
+  +animation(loading-progress linear infinite)
+  +animation-duration(400ms, 2400ms)
+
+  &:nth-child(2)
+    +animation-delay(400ms)
+  &:nth-child(3)
+    +animation-delay(800ms)
+  &:nth-child(4)
+    +animation-delay(1200ms)
+  &:nth-child(5)
+    +animation-delay(1600ms)
+  &:nth-child(6)
+    +animation-delay(2000ms)
