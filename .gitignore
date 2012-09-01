@@ -1,6 +1,7 @@
 .DS_Store
 *.swp
 .rvmrc
+.rbenv-version
 .powrc
 db/*.sqlite3
 log/*.log
