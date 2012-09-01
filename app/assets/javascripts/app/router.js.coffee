@@ -7,6 +7,10 @@ class @Router extends Backbone.Router
 
   routes: routes.merge('': 'route')
 
+  views.each (view) =>
+    viewClass = view.camelize() + 'View'
+    @::[view] = -> new viewClass()
+
   route: ->
     # TODO: Try to restore last opened page (if possible)
     # TODO: ... or redirect to home if user is not logged in
