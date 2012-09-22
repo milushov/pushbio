@@ -27,6 +27,7 @@ gem 'role-rails'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'sidekiq'
+gem 'rails_config'
 
 group :test do
   gem 'cucumber-rails', require: false
