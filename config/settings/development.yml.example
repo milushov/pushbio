@@ -1,0 +1,8 @@
+host: 'http://pushbio.dev'
+email: 'pigeon@pushb.io'
+
+services:
+
+  facebook:
+    key: '408867965828793'
+    secret: '1543c0415583dd26bc7db3d37980e2df'

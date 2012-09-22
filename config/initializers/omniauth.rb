@@ -1,1 +1,1 @@
-OmniAuth.config.full_host = 'http://pushbio.dev'
+OmniAuth.config.full_host = Settings.host
