@@ -1,0 +1,1 @@
+class @ErrorView extends Backbone.View

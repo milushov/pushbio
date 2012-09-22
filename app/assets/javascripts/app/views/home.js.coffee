@@ -1,0 +1,1 @@
+class @HomeView extends Backbone.View

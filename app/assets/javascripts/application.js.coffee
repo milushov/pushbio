@@ -7,6 +7,8 @@
 
 #= require spin-1.2.5
 
+#= require store-master
+
 #= require jquery.role-1.3.0
 #= require jquery.placeholder-2.0.7
 #= require jquery.quicksand-1.2.2
@@ -14,3 +16,5 @@
 #= require jquery.spin
 
 #= require fileuploader-2.0.beta
+
+#= require app

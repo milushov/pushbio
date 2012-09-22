@@ -1,6 +1,7 @@
 .DS_Store
 *.swp
 .rvmrc
+.rbenv-version
 .powrc
 db/*.sqlite3
 log/*.log
@@ -8,3 +9,5 @@ tmp/*
 .powenv
 .bundle
 /vendor/bundle
+# Sprites
+app/assets/images/ui/masks-*.png
