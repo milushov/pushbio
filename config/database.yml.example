@@ -1,23 +1,23 @@
 development:
-  adapter: mysql2
+  adapter: postgresql
   database: pushbio_development
-  user: 
+  user:
   password:
   pool: 5
   timeout: 5000
 
 test: &test
-  adapter: mysql2
+  adapter: postgresql
   database: pushbio_test
-  user: 
-  password: 
+  user:
+  password:
   pool: 5
   timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   database: pushbio_production
-  user: 
+  user:
   password:
 
   pool: 5
