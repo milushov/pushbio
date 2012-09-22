@@ -5,9 +5,11 @@
 #= require ./router
 #= require_self
 
-->
-  # Apply extensions
-  Object.merge(Backbone.View::, RenderingExtension)
+# Apply extensions
+Object.merge(Backbone.View::, RenderingExtension)
 
-  new Router()
+# Create router
+new Router()
+
+$ ->
   Backbone.history.start()
