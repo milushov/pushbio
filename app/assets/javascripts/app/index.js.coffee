@@ -9,7 +9,14 @@
 Object.merge(Backbone.View::, RenderingExtension)
 
 # Create router
-new Router()
+@router = new Router()
 
-$ ->
-  Backbone.history.start()
+# Create and fetch current user
+@currentUser = new User(id: 'current')
+@currentUser.fetch
+  success: ->
+    Backbone.history.start()
+
+  error: ->
+    # TODO: Process error
+    alert 'Something wrong!'
