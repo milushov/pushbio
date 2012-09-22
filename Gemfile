@@ -28,6 +28,7 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'sidekiq'
 gem 'rails_config'
+gem 'active_model_serializers'
 
 group :test do
   gem 'cucumber-rails', require: false
