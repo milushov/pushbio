@@ -1,0 +1,50 @@
+@import 'ui/masks/*.png'
+
+body
+  font-family: 'Lucida Grande', Arial
+  -webkit-transform: translateZ(0)
+
+.top-line
+  background: #f2405c
+  height: 10px
+
+.content
+
+.text
+  font-size: 16px
+  line-height: 22px
+
+.text-service
+  padding-left: 20px
+  background-repeat: no-repeat
+  background-position: 0 50%
+
+  &.is-twitter
+    color: #2498d5
+    background-image: inline-image('ui/social_icons/twitter.png')
+
+  &.is-facebook
+    color: #1b499b
+    background-image: inline-image('ui/social_icons/facebook.png')
+
+  &.is-instagram
+    color: #bb9479
+    background-image: inline-image('ui/social_icons/instagram.png')
+
+  &.is-pushbio
+    color: #ef435c
+    padding-left: 0
+
+.logotype
+  color: #5a220d
+  font-size: 36px
+  font-weight: normal
+  text-align: center
+
+.mask
+  &.is-x100
+    width: 100px
+    height: 100px
+
+    &.is-0
+      @include masks-sprite(x100_0)

@@ -7,9 +7,10 @@ html
     = csrf_meta_tags
 
   body
-    = flash[:notice]
-    = link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) 
-    = yield
+    .top-line
+    .content
+      = link_to 'Sign in with Facebook', user_omniauth_authorize_path(:facebook)
+      = yield
 
     = jquery_include_tag :google
     = javascript_include_tag 'application'
