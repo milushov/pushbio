@@ -30,6 +30,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.2)
     arel (3.0.2)
+    bcrypt-ruby (3.0.1)
     builder (3.0.0)
     capybara (1.1.2)
       mime-types (>= 1.16)
@@ -77,6 +78,11 @@ GEM
       cucumber (>= 1.1.8)
       nokogiri (>= 1.5.0)
     database_cleaner (0.8.0)
+    devise (2.1.2)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (~> 3.1)
+      warden (~> 1.2.1)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.4.0)
@@ -86,6 +92,8 @@ GEM
     factory_girl_rails (4.0.0)
       factory_girl (~> 4.0.0)
       railties (>= 3.0.0)
+    faraday (0.8.4)
+      multipart-post (~> 1.1)
     ffi (1.1.5)
     fssm (0.2.9)
     gherkin (2.11.2)
@@ -102,7 +110,9 @@ GEM
     guard-spork (1.1.0)
       guard (>= 1.1)
       spork (>= 0.8.4)
+    hashie (1.2.0)
     hike (1.2.1)
+    httpauth (0.1)
     i18n (0.6.0)
     journey (1.0.4)
     jquery-rails (2.1.1)
@@ -111,6 +121,8 @@ GEM
     jquery-rails-cdn (0.2.0)
       jquery-rails
     json (1.7.5)
+    jwt (0.1.5)
+      multi_json (>= 1.0)
     konacha (1.4.2)
       actionpack (~> 3.1)
       capybara
@@ -130,7 +142,24 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.3.6)
+    multipart-post (1.1.5)
     nokogiri (1.5.5)
+    oauth2 (0.8.0)
+      faraday (~> 0.8)
+      httpauth (~> 0.1)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      rack (~> 1.2)
+    omniauth (1.1.1)
+      hashie (~> 1.2)
+      rack
+    omniauth-facebook (1.4.1)
+      omniauth-oauth2 (~> 1.1.0)
+    omniauth-oauth2 (1.1.1)
+      oauth2 (~> 0.8.0)
+      omniauth (~> 1.0)
+    orm_adapter (0.4.0)
+    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -147,6 +176,8 @@ GEM
       activesupport (= 3.2.8)
       bundler (~> 1.0)
       railties (= 3.2.8)
+    rails_config (0.3.1)
+      activesupport (>= 3.0)
     railties (3.2.8)
       actionpack (= 3.2.8)
       activesupport (= 3.2.8)
@@ -216,7 +247,6 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.6)
     temple (0.4.0)
     therubyracer (0.10.2)
       libv8 (~> 3.3.10)
@@ -230,6 +260,8 @@ GEM
     uglifier (1.2.7)
       execjs (>= 0.3.0)
       multi_json (~> 1.3)
+    warden (1.2.1)
+      rack (>= 1.0)
     xpath (0.1.4)
       nokogiri (~> 1.3)
 
@@ -246,6 +278,7 @@ DEPENDENCIES
   compass-rails
   cucumber-rails
   database_cleaner
+  devise (~> 2.1.0)
   factory_girl_rails (~> 4.0)
   growl
   guard-cucumber
@@ -255,7 +288,10 @@ DEPENDENCIES
   jquery-rails-cdn
   json
   konacha
+  omniauth-facebook
+  pg
   rails (= 3.2.8)
+  rails_config
   rmagick
   role-rails
   rspec-rails (~> 2.11.0)
@@ -265,6 +301,5 @@ DEPENDENCIES
   skim
   slim
   spork-rails
-  sqlite3
   therubyracer
   uglifier (>= 1.0.3)
