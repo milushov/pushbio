@@ -12,3 +12,7 @@ tmp/*
 /vendor/bundle
 # Sprites
 app/assets/images/ui/masks-*.png
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
