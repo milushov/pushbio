@@ -19,4 +19,4 @@ Object.merge(Backbone.View::, RenderingExtension)
 
   error: ->
     # TODO: Process error
-    alert 'Something wrong!'
+    #alert 'Something wrong!'
