@@ -5,13 +5,13 @@ class @Router extends Backbone.Router
 
   views.each (page) -> routes[page] = page
 
-  routes: routes.merge('': 'route')
+  routes: routes.merge('': 'root')
 
   views.each (view) =>
     viewClass = view.camelize() + 'View'
     @::[view] = -> new viewClass()
 
-  route: ->
+  root: ->
     # TODO: Try to restore last opened page (if possible)
     # TODO: ... or redirect to home if user is not logged in
     # TODO: ... or redirect to form
