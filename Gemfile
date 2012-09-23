@@ -30,6 +30,7 @@ group :assets do
   gem 'jquery-rails-cdn'
   gem 'role-rails'
   gem 'modernizr'
+  gem 'backbone-rails'
 end
 
 group :development do
