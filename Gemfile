@@ -39,8 +39,6 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 2.11.0'
   gem 'factory_girl_rails', '~> 4.0'
-  gem 'spork-rails'
-  gem 'guard-spork'
   gem 'guard-rspec'
   gem 'konacha'
   gem 'capybara'
