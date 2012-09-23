@@ -1,3 +1,4 @@
-#= require ./application
-#= require ./router
-#= require ./boot
+#= require_tree ./models
+#= require_tree ./collections
+#= require_tree ./views
+#= require_tree ./templates
