@@ -10,6 +10,16 @@ gem 'slim'
 gem 'devise', '~> 2.1.0'
 gem 'omniauth-facebook'
 
+gem 'jquery-rails'
+gem 'jquery-rails-cdn'
+gem 'role-rails'
+gem 'carrierwave'
+gem 'rmagick'
+gem 'sidekiq'
+gem 'rails_config'
+gem 'active_model_serializers',
+    git: 'https://github.com/josevalim/active_model_serializers.git'
+
 group :assets do
   gem 'sass', '3.2.1'
   gem 'compass', '0.13.alpha.0'
@@ -21,19 +31,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'jquery-rails-cdn'
-gem 'role-rails'
-gem 'carrierwave'
-gem 'rmagick'
-gem 'sidekiq'
-gem 'rails_config'
-gem 'active_model_serializers',
-    git: 'https://github.com/josevalim/active_model_serializers.git'
-
-group :test do
-  gem 'cucumber-rails', require: false
-  gem 'database_cleaner'
+group :development do
+  gem 'foreman'
+  gem 'zeus'
 end
 
 group :development, :test do
@@ -50,4 +50,9 @@ group :development, :test do
 
   # Front-end
   gem 'chai-jquery-rails'
+end
+
+group :test do
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
