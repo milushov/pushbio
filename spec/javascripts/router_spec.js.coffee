@@ -13,7 +13,16 @@ describe 'Router', ->
         router[view].should.be.exists
         router[view].should.be.a 'function'
 
-  describe 'route', ->
+  describe 'root', ->
+
+    describe 'lastPage is stored in settings', ->
+
+      beforeEach ->
+        alert window.settings
+
+    describe 'user logged in', ->
+
+    describe 'user is not logged in', ->
 
   describe 'checkAccess', ->
 
