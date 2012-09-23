@@ -10,9 +10,6 @@ gem 'slim'
 gem 'devise', '~> 2.1.0'
 gem 'omniauth-facebook'
 
-gem 'jquery-rails'
-gem 'jquery-rails-cdn'
-gem 'role-rails'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'sidekiq'
@@ -29,6 +26,10 @@ group :assets do
   gem 'skim'
   gem 'therubyracer', platforms: :ruby
   gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-rails'
+  gem 'jquery-rails-cdn'
+  gem 'role-rails'
+  gem 'modernizr'
 end
 
 group :development do
