@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/josevalim/active_model_serializers.git
+  revision: 3c5e58bf132be4c7111e1f96a6d471676511616e
+  specs:
+    active_model_serializers (0.5.2)
+      activemodel (>= 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -269,6 +276,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers!
   capybara
   capybara-webkit
   carrierwave
