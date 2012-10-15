@@ -20,9 +20,17 @@ describe 'Router', ->
       beforeEach ->
         alert window.settings
 
+      it 'should redirect to last opened page'
+
+      it 'should redirect to home if user in not logged in'
+
     describe 'user logged in', ->
 
+      it 'should redirect to edit profile form'
+
     describe 'user is not logged in', ->
+
+      it 'should redirect to home page'
 
   describe 'checkAccess', ->
 
