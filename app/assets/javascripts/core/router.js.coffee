@@ -27,7 +27,4 @@ class @Router extends Backbone.Router
   requireAuth = ['form', 'new']
 
   checkAccess: (page) ->
-    not requireAuth.any(page) or @userLoggedIn()
-
-  userLoggedIn: ->
-    currentUser.loggedIn()
+    not requireAuth.any(page) or currentUser.loggedIn()
