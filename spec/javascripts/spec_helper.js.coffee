@@ -1,4 +1,5 @@
 #= require jquery
+#= require modernizr
 #= require application
 
 #= require chai-jquery
