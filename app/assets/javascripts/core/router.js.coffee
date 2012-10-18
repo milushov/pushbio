@@ -12,17 +12,17 @@ class @Router extends Backbone.Router
     @::[view] = -> new viewClass()
 
   root: ->
-    ## Try to restore last opened page (if possible)
-    #if lastPage = settings.lastPage and @checkAccess(lastPage)
-      #@navigate(lastPage)
+    # Try to restore last opened page (if possible)
+    if (lastPage = settings.get('lastPage')) and @checkAccess(lastPage)
+      @navigate(lastPage)
 
-    ## Redirect to form if user is logged in
-    #else if @userLoggedIn()
-      #@navigate('form')
+    # Redirect to form if user is logged in
+    else if currentUser.loggedIn()
+      @navigate('form')
 
-    ## Or redirect to home
-    #else
-      #@navigate('home')
+    # Or redirect to home
+    else
+      @navigate('home')
 
   requireAuth = ['form', 'new']
 

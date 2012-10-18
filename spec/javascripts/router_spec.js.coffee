@@ -28,8 +28,11 @@ describe 'Router', ->
 
     describe 'lastPage is stored in settings', ->
 
-      beforeEach ->
+      before ->
         window.settings = get: -> 'new'
+
+      after ->
+        window.settings = get: -> undefined
 
       it 'should redirect to last opened page', ->
         loginUser()
