@@ -21,24 +21,37 @@ describe 'Router', ->
 
   describe 'root', ->
 
+    navigate = null
+
+    beforeEach ->
+      navigate = sinon.stub(router, 'navigate')
+
     describe 'lastPage is stored in settings', ->
 
       beforeEach ->
-        alert window.settings
+        window.settings = get: -> 'new'
 
-      it 'should redirect to last opened page'
+      it 'should redirect to last opened page', ->
+        loginUser()
+        router.root()
+        navigate.should.have.been.calledWith('new')
 
-      it 'should redirect to home if user in not logged in'
+      it 'should redirect to home if user in not logged in', ->
+        router.root()
+        navigate.should.have.been.calledWith('home')
 
     describe 'user logged in', ->
       beforeEach loginUser
 
       it 'should redirect to edit profile form', ->
-
+        router.root()
+        navigate.should.have.been.calledWith('form')
 
     describe 'user is not logged in', ->
 
-      it 'should redirect to home page'
+      it 'should redirect to home page', ->
+        router.root()
+        navigate.should.have.been.calledWith('home')
 
   describe 'checkAccess', ->
 
