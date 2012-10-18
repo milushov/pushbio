@@ -14,8 +14,7 @@ describe 'Router', ->
   describe 'view routes', ->
 
     it 'should be defined', ->
-      # TODO: Refactor constant usage
-      'home form new history faq error'.split(/\s/).each (view) ->
+      Router.views.each (view) ->
         router[view].should.be.exists
         router[view].should.be.a 'function'
 
