@@ -20,5 +20,18 @@ describe 'Settings', ->
   it 'should immediately write settings to localStorage', ->
     setItem = sinon.stub(localStorage, 'setItem')
     settings = new Settings()
+    settings.set(lastPage: 'new', test: 'test')
     setItem.should.have.been.calledWith \
       'settings', lastPage: 'new', test: 'test'
+    setItem.restore()
+
+  it 'should save to localStorage only if attribute is really changed', ->
+    settings = new Settings()
+    settings.set('testing', 123)
+    setItem = sinon.stub(localStorage, 'setItem')
+
+    settings.set('testing', 123)
+    setItem.should.not.have.been.called
+
+    settings.set('testing', 456)
+    setItem.should.have.been.calledOnce
