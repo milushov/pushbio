@@ -11,6 +11,9 @@
     # Create router
     window.router = new Router()
 
+    # Create loading view
+    loadingView = new LoadingView()
+
     # Create and fetch current user
     window.currentUser = new User(id: 'current')
     currentUser.fetch
