@@ -9,16 +9,16 @@ describe 'Settings', ->
     Modernizr.localstorage = false
 
     settings = null
-    expect(-> new Settings()).to.not.throw
-    settings.get('lastPage').should.be.undefined
+    expect(-> settings = new Settings()).to.not.throw()
+    expect(settings.get('lastPage')).to.be.undefined
 
   it 'should read settings from localStorage', ->
-    getItem = stub(localStorage, 'getItem')
+    getItem = sinon.stub(localStorage, 'getItem')
     settings = new Settings()
     getItem.should.have.been.calledWith('settings')
 
   it 'should immediately write settings to localStorage', ->
-    setItem = stub(localStorage, 'getItem')
+    setItem = sinon.stub(localStorage, 'setItem')
     settings = new Settings()
     setItem.should.have.been.calledWith \
       'settings', lastPage: 'new', test: 'test'
