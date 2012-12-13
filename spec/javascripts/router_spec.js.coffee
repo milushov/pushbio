@@ -18,6 +18,10 @@ describe 'Router', ->
         router[view].should.be.exists
         router[view].should.be.a 'function'
 
+    it 'should navigate to root if page forbidden'
+
+    it 'should create page view (FormPage for form)'
+
   describe 'root', ->
 
     navigate = null

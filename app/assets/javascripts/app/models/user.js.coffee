@@ -2,4 +2,4 @@ class @User extends Backbone.Model
 
   urlRoot: '/users'
 
-  loggedIn: -> @id?
+  loggedIn: -> @id? and @id != 'current'

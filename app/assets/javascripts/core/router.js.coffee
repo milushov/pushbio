@@ -7,9 +7,14 @@ class @Router extends Backbone.Router
 
   routes: routes.merge('': 'root')
 
-  @views.each (view) =>
-    viewClass = view.camelize() + 'View'
-    @::[view] = -> new viewClass()
+  @views.each (page) =>
+    viewClass = page.camelize() + 'View'
+    @::[page] = ->
+      debugger
+      if @checkAccess(page)
+        new viewClass()
+      else
+        @navigate('')
 
   root: ->
     @navigate \
