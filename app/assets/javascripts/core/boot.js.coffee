@@ -19,6 +19,7 @@
     currentUser.fetch
       success: ->
         Backbone.history.start()
+        loadingView.hide()
 
       error: ->
         # TODO: Process error
