@@ -1,1 +1,3 @@
-class @FormView extends Backbone.View
+#= require ./page
+
+class @FormView extends PageView

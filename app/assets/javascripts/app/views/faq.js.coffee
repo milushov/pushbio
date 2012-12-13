@@ -1,1 +1,3 @@
-class @FaqView extends Backbone.View
+#= require ./page
+
+class @FaqView extends PageView

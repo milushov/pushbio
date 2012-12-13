@@ -1,1 +1,3 @@
-class @NewView extends Backbone.View
+#= require ./page
+
+class @NewView extends PageView

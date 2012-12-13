@@ -1,1 +1,3 @@
-class @HistoryView extends Backbone.View
+#= require ./page
+
+class @HistoryView extends PageView

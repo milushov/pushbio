@@ -1,1 +1,3 @@
-class @ErrorView extends Backbone.View
+#= require ./page
+
+class @ErrorView extends PageView

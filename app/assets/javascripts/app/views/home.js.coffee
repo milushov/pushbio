@@ -1,1 +1,3 @@
-class @HomeView extends Backbone.View
+#= require ./page
+
+class @HomeView extends PageView
