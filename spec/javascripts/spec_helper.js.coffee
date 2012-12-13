@@ -6,7 +6,7 @@
 #= require sinon-1.4.2
 #= require sinon-chai-2.1.2
 
-#= require_tree ./templates
+#= require_tree ./app/templates
 
 #= require_self
 
