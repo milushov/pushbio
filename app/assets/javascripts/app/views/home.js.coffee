@@ -1,3 +1,3 @@
 #= require ./page
 
-class @HomeView extends PageView
+class App.HomeView extends App.PageView

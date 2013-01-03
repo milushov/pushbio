@@ -1,4 +1,4 @@
-class @LoadingView extends Backbone.View
+class App.LoadingView extends Backbone.View
 
   el: '@loading-view'
 

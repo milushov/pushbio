@@ -1,3 +1,3 @@
 #= require ./page
 
-class @NewView extends PageView
+class App.NewView extends App.PageView

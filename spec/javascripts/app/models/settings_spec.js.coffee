@@ -1,6 +1,6 @@
 #= require spec_helper
 
-describe 'Settings', ->
+describe 'App.Settings', ->
 
   beforeEach ->
     Modernizr.localstorage = true
@@ -9,24 +9,24 @@ describe 'Settings', ->
     Modernizr.localstorage = false
 
     settings = null
-    expect(-> settings = new Settings()).to.not.throw()
+    expect(-> settings = new App.Settings()).to.not.throw()
     expect(settings.get('lastPage')).to.be.undefined
 
   it 'should read settings from localStorage', ->
     getItem = sinon.stub(localStorage, 'getItem')
-    settings = new Settings()
+    settings = new App.Settings()
     getItem.should.have.been.calledWith('settings')
 
   it 'should immediately write settings to localStorage', ->
     setItem = sinon.stub(localStorage, 'setItem')
-    settings = new Settings()
+    settings = new App.Settings()
     settings.set(lastPage: 'new', test: 'test')
     setItem.should.have.been.calledWith \
       'settings', lastPage: 'new', test: 'test'
     setItem.restore()
 
   it 'should save to localStorage only if attribute is really changed', ->
-    settings = new Settings()
+    settings = new App.Settings()
     settings.set('testing', 123)
     setItem = sinon.stub(localStorage, 'setItem')
 

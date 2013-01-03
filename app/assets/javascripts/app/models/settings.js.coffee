@@ -1,16 +1,29 @@
-class @Settings extends Backbone.Model
+class App.Settings extends Backbone.Model
+
+  STORAGE_KEY = 'settings'
 
   wrapWithModernizr = (fn) ->
-    -> fn.apply(@, arguments) if Modernizr.localstorage
+    ->
+      if Modernizr.localstorage
+        fn.apply(@, arguments)
 
   initialize: wrapWithModernizr ->
     @fetch()
-    @on('change', => @save())
+    @listenTo(@, 'change', @save)
 
   fetch: wrapWithModernizr ->
-    if settings = localStorage.getItem('settings')
-      settings.keys().each (key) =>
-        @set(key, settings[key], silent: true)
+    if data = @data()
+      data.keys().each (key) =>
+        @set(key, data[key], silent: true)
+
+  data: ->
+    json = localStorage.getItem(STORAGE_KEY)
+    try
+      data = JSON.parse(json)
+      Object.extended(data)
+    catch e
+      # TODO: Setup echoes
+      console.error e
 
   save: ->
-    localStorage.setItem('settings', @toJSON())
+    localStorage.setItem(STORAGE_KEY, @toJSON())

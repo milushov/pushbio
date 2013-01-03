@@ -1,3 +1,3 @@
 #= require ./page
 
-class @FaqView extends PageView
+class App.FaqView extends App.PageView

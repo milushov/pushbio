@@ -1,3 +1,3 @@
 #= require ./page
 
-class @ErrorView extends PageView
+class App.ErrorView extends App.PageView

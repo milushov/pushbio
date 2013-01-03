@@ -1,22 +1,26 @@
 #= require spec_helper
 
-describe 'Router', ->
+describe 'App.Router', ->
 
   loginUser = ->
-    sinon.stub(currentUser, 'loggedIn').returns(true)
+    sinon.stub(app.user, 'loggedIn').returns(true)
 
   router = null
 
   beforeEach ->
-    router = new Router()
-    window.currentUser = loggedIn: -> false
+    router = new App.Router()
+    app.user = loggedIn: -> false
 
   describe 'view routes', ->
 
     it 'should be defined', ->
-      Router.views.each (view) ->
+      App.Router.views.each (view) ->
         router[view].should.be.exists
         router[view].should.be.a 'function'
+
+    it 'should navigate to root if page forbidden'
+
+    it 'should create page view (FormPage for form)'
 
   describe 'root', ->
 
@@ -28,10 +32,10 @@ describe 'Router', ->
     describe 'lastPage is stored in settings', ->
 
       before ->
-        window.settings = get: -> 'new'
+        app.settings = get: -> 'new'
 
       after ->
-        window.settings = get: -> undefined
+        app.settings = get: -> undefined
 
       it 'should redirect to last opened page', ->
         loginUser()

@@ -1,15 +1,12 @@
-class @PageView extends Backbone.View
+class App.PageView extends Backbone.View
 
   constructor: ->
     super
     @show()
 
   show: ->
-    @render()
+    @render(@view()).appendTo('@content')
     @$el.fadeIn(300)
 
-  render: ->
-    super(@page(), {}).appendTo('@content')
-
-  page: ->
+  view: ->
     @options.page

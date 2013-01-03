@@ -1,2 +1,2 @@
-class @Service extends Backbone.Model
+class App.Service extends Backbone.Model
   #

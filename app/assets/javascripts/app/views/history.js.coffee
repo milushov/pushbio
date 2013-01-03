@@ -1,3 +1,3 @@
 #= require ./page
 
-class @HistoryView extends PageView
+class App.HistoryView extends App.PageView
