@@ -34,4 +34,7 @@ Pushbio::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Enable source maps in the browser
+  config.sass.debug_info = true
 end
