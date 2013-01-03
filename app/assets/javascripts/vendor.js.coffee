@@ -1,5 +1,6 @@
-#= require sugar-1.3-custom
-#= require backbone-rails
+#= require sugar
+#= require underscore
+#= require backbone
 #= require spin-1.2.5
 #= require store-master
 #= require jquery_ujs
