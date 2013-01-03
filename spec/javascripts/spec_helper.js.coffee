@@ -3,7 +3,6 @@
 #= require vendor
 #= require extensions
 #= require app
-#= require boot
 
 #= require chai-jquery
 #= require sinon-1.4.2
@@ -12,5 +11,7 @@
 #= require_tree ./app/templates
 
 #= require_self
+
+@app = {}
 
 chai.Assertion.includeStack = true
