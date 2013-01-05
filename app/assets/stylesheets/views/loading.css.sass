@@ -1,0 +1,50 @@
+.loading-page
+  width: 370px
+  margin: 80px auto 0
+
+.loading-mask
+  margin: 40px auto
+
+.loading-intro
+  &.is-first
+    margin-top: 80px
+
+$progress_width: 114px
+$progress_height: 14px
+
+.loading-progress
+  position: relative
+  text-align: center
+  width: $progress_width
+  height: $progress_height
+  margin: 0 auto
+
+.loading-progress-dot
+  position: absolute
+  top: 4px
+  display: block
+  background: $loading_color
+  +circle
+  +size(6)
+  +transition-property(all)
+  +transition-duration(10ms)
+  +transition-timing-function(ease-out)
+  +animation(loading-progress linear infinite)
+  +animation-duration(200ms, 1200ms)
+  left: 4px
+
+  &:nth-child(2)
+    +animation-delay(200ms)
+    left: 24px
+  &:nth-child(3)
+    +animation-delay(400ms)
+    left: 44px
+  &:nth-child(4)
+    +animation-delay(600ms)
+    left: 64px
+  &:nth-child(5)
+    +animation-delay(800ms)
+    left: 84px
+  &:nth-child(6)
+    +animation-delay(1000ms)
+    left: 104px

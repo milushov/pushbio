@@ -1,10 +1,10 @@
 @import 'ui/masks/*.png'
 
 body
-  font-family: 'PT Sans Narrow', Arial
+  font-family: $main_font, $backup_font
 
 .top-line
-  background: #f2405c
+  background: $main_ui_color
   height: 10px
 
 .content
@@ -19,31 +19,33 @@ body
   background-position: 0 50%
 
   &.is-twitter
-    color: #2498d5
+    color: $twitter_text_color
     background-image: inline-image('ui/social_icons/twitter.png')
 
   &.is-facebook
-    color: #1b499b
+    color: $facebook_text_color
     background-image: inline-image('ui/social_icons/facebook.png')
 
   &.is-instagram
-    color: #bb9479
+    color: $instagram_text_color
     background-image: inline-image('ui/social_icons/instagram.png')
 
   &.is-pushbio
-    color: #ef435c
+    color: $main_ui_text_color
     padding-left: 0
 
 .logotype
-  color: #5a220d
+  color: $text_color
   font-size: 36px
   font-weight: normal
   text-align: center
 
 .mask
   &.is-x100
-    width: 100px
-    height: 100px
+    $side: 100px
+
+    width: $side
+    height: $side
 
     &.is-0
       @include masks-sprite(x100_0)
