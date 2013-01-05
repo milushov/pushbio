@@ -1,21 +1,19 @@
 class App.Router extends Backbone.Router
 
-  do =>
+  views  = 'home form new history faq error'.split(/\s/)
+  routes = Object.extended()
 
-    @views  = 'home form new history faq error'.split(/\s/)
-    routes  = Object.extended()
+  views.each (page) -> routes[page] = page
 
-    @views.each (page) -> routes[page] = page
+  views.each (page) =>
+    viewClass = App[page.camelize() + 'View']
+    @::[page] = ->
+      if @checkAccess(page)
+        new viewClass(page: page)
+      else
+        @navigate('')
 
-    @routes = routes.merge('': 'root')
-
-    @views.each (page) =>
-      viewClass = window[page.camelize() + 'View']
-      @::[page] = ->
-        if @checkAccess(page)
-          new viewClass(page: page)
-        else
-          @navigate('')
+  routes: routes.merge('': 'root')
 
   root: ->
     @navigate \
